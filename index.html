@@ -14,15 +14,15 @@
 <div id='map'></div>
 <script>
     L.mapbox.accessToken = 'pk.eyJ1Ijoia2V2cmVpbiIsImEiOiJfQ0RHX2hZIn0.hI4lNnug0mHlUQ16xX3fIg';
-    var southWest = L.latLng(-57, -179),
-        northEast = L.latLng(75, 179),
+    var southWest = L.latLng(32.45, -124.45),
+        northEast = L.latLng(-113.77, 42.14),
         bounds = L.latLngBounds(southWest, northEast);
-    var map = L.mapbox.map('map', 'kevrein.1b9ln7uw',{
+    var map = L.mapbox.map('map', 'kevrein.8vcy04ux',{
             maxBounds: bounds,
-            maxZoom: 6,
-            minZoom: 2,
-            zoom: 3,
-             center: [49.7, 16.8],
+            maxZoom: 10,
+            minZoom: 7,
+            zoom: 7,
+            center: [-120.1,37.5],
         tileLayer: {
             detectRetina: true
         }
